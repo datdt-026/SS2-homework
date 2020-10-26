@@ -1,0 +1,1 @@
+let input = prompt("nhập dãy số").split(",");

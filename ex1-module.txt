@@ -1,0 +1,24 @@
+Một module có thể hiểu là một file, trong đó sẽ chứa những đoạn code đảm nhiệm một chức năng nào đó. 
+Các đặc trưng của module:
++ Luôn ở strict mode: 
+	Một module luôn luôn sử dụng use strict, nghĩa là code JavaScript luôn luôn ở trong strict mode. Nhờ việc này, nếu chúng ta gán một biến không có khai báo trước sẽ bị lỗi ngay
++ Scope: 
+	Mỗi module có một scope riêng, điều đó khiến cho các biến, hàm, v.v... của mỗi module sẽ chỉ thuộc về module đó mà thôi, các module khác sẽ không thể gọi hay sử đụng được.
++ Code trong module chỉ được thực thi 1 lần khi import:
+	Đây là một tính chất hầu như xuất hiện trên tất cả các ngôn ngữ. Nếu như một module được import nhiều lần, thì code của nó cũng chỉ được thực thi một lần duy nhất (ở lần import đầu tiên) mà thôi. Đây là một trong số những tính chất rất quan trọng.
++ import meta: 
+	ột đối tượng import.meta sẽ chứa thông tin về module hiện tại. Khi được thực thi bởi JavaScript engine của trình duyệt, nó chứa thông tin URL của script 
+
+
+
+
+
+Với ES6 thì chúng ta cũng đã có thể module hóa code javascript bằng cách sử dụng 2 keyword export và import:
+ + export: "export data;"
+
+-> data là những gì bạn muốn xuất ra cho các module khác có thể sử dụng
+
+ + import: "import name from path;"
+
+-> name là biến bạn muốn gán để nhận dữ liệu và trả về modulle đó
+-> path là đường dẫn tới modue bạn cần import
